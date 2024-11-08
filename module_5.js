@@ -1,45 +1,45 @@
 // 5.10.1
-let randomNum = +prompt("Введите любое число:");
+const randomNum = +prompt("Введите любое число:");
 alert(`Введеное число - ${randomNum}
 Квадрат числа - ${randomNum ** 2}
 Куб числа - ${randomNum ** 3}`);
 // 5.10.2
-let promocode = prompt("Введите промокод:").toLowerCase();
+const promocode = prompt("Введите промокод:").toLowerCase();
 if (promocode == "скидка") {
     alert("Промокод применен");
 } else {
     alert("промокод не работает");
 }
 // 5.10.3
-let name = prompt("Введите ваше имя:");
-let yearOfBirth = +prompt("Введите ваш год рождения:");
+const name = prompt("Введите ваше имя:");
+const yearOfBirth = +prompt("Введите ваш год рождения:");
 if (isNaN(yearOfBirth) == false) {
     alert(`${name}: ${2024 - yearOfBirth}`);
 } else {
     alert("Год должен быть числом!");
 }
 // 5.10.4
-let name2 = prompt("Введите ваше имя:");
-let yearOfBirth2 = +prompt("Введите ваш год рождения:");
-let remains = (2024 - yearOfBirth2) % 10;
+const name = prompt("Введите ваше имя:");
+const yearOfBirth = +prompt("Введите ваш год рождения:");
+let remains = (2024 - yearOfBirth) % 10;
 if (
-  name2.length > 0 && isNaN(yearOfBirth2) == false) {
+  name.length > 0 && isNaN(yearOfBirth) == false) {
     switch (remains) {
         case 1:
-        alert(`${name2}: ${2024 - yearOfBirth2} год`);
+        alert(`${name}: ${2024 - yearOfBirth} год`);
         break;
         case 2 || 3 || 4:
-        alert(`${name2}: ${2024 - yearOfBirth2} года`);
+        alert(`${name}: ${2024 - yearOfBirth} года`);
         break;
         default:
-        alert(`${name2}: ${2024 - yearOfBirth2} лет`);
+        alert(`${name}: ${2024 - yearOfBirth} лет`);
         break;
     }
 } else {
     alert("Год не число или пустое имя");
 }
 // 5.10.5
-let age = +prompt("Введите ваш возраст:");
+const age = +prompt("Введите ваш возраст:");
 let credit;
 console.log(age);
 if (age < 18) {
